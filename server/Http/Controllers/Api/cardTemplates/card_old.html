@@ -1,0 +1,142 @@
+{{#data}}
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    {{{font}}}
+    <style>
+      @font-face {
+        font-family: 'AvenirNext';
+        src: url('AvenirNextLTPro-Regular.otf');
+      }
+      body{
+        height: 100vh;
+        margin: 0 !important;
+        padding:0 !important;
+        border:0 !important;
+        outline:0 !important;
+      }
+      .break-after {
+        page-break-after: always;
+      }
+      .page-break-avoid{
+        page-break-inside: avoid;
+      }
+      .card-container{
+        margin: 0;
+        padding: 0;
+      }
+      .card-front{
+        height: 100vh;
+        position: relative;
+      }
+      .card-front-left{
+        height: 100vh;
+        position: relative;
+        width: 50%;
+        float: left;
+      }
+      .card-front-right{
+        height: 100vh;
+        position: relative;
+        width: 50%;
+        float: right;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .design{
+        width: 100%;
+        position: absolute;
+        top: 0;
+      }
+
+      .card-back{
+        position: relative;
+        height: 100vh;
+      }
+      .card-back-left{
+        height: 100vh;
+        position: relative;
+        width: 50%;
+        float: left;
+      }
+      .card-back-right{
+        height: 100vh;
+        position: relative;
+        width: 50%;
+        float: right;
+      }
+      .message{
+        position: absolute;
+        top:0%;
+        left: 0;
+        padding: 10px;
+      }
+      .message-inner{
+        width: 100%;
+        font-size: 12px;
+        word-wrap:break-word;
+      }
+      .card-front-footer{
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        width: 100%;
+        text-align: center;
+        font-family: AvenirNext;
+      }
+      .orderid{
+        font-size: 8px;
+        font-family: AvenirNext;
+        color: #7d7d7d;
+      }
+      .logo{
+        width: 100px;
+      }
+      .website{
+        font-size: 8px;
+        letter-spacing: 0.6px;
+        font-family: AvenirNext;
+      }
+      .coupon{
+        font-size: 8px;
+        font-family: AvenirNext;
+      }
+      .footer-logo{
+        width: 100px;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-container">
+      <div class="card-front page-break-avoid ">
+        <div class="card-front-left">
+          <div class="card-front-footer">
+            <img class="footer-logo" src="https://cdn.shopify.com/s/files/1/0264/0124/3198/files/freshcutpaperlogo.svg">
+            <p class="orderid">{{orderId}}</p>
+          </div>
+        </div>
+        <div class="card-front-right" style="background-image: url({{image}})">
+        </div>
+      </div>
+    </div>
+
+    <div class="card-container">
+      <div class="card-back page-break-avoid">
+        <div class="card-back-left">
+        </div>
+        <div class="card-back-right">
+          <div class="message">
+            <div class="message-inner" {{{fontFamiliy}}}>
+              {{{message}}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
+{{/data}}

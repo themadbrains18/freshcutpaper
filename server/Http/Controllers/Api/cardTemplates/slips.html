@@ -1,0 +1,61 @@
+{{#data}}
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+      .break-after {
+        page-break-after: always;
+      }
+      .slip-container{
+        width: 70%;
+        margin: auto;
+        margin-top: 100px;
+      }
+      .slip-header{
+        display: flex;
+        justify-content:space-between;
+      }
+      .footer-text{
+        font-size: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slip-container break-after">
+      <div class="slip-header">
+        <p>FreshCut Paper</p>
+        <p style="font-size: 10px; text-align: right;">Order #{{orderId}}</p>
+      </div>
+      <div class="slip-shipto">
+        <p style="font-size: 12px;"><strong>SHIP TO</strong></p>
+        <p style="font-size: 11px;">{{firstName}} {{lastName}}</p>
+        <p style="font-size: 11px; ">{{delivery}}</p>
+      </div>
+      <div class="line-items" style="margin-top: 30px;">
+        <table style="border-top: 2px solid #000;border-bottom: 2px solid #000; width: 100%;">
+          <tr>
+            <th style="font-size: 11px; text-align: left; padding: 10px 0px; font-weight: 700;"><strong>Items</strong></th>
+            <th style="font-size: 11px; text-align: right; padding: 10px 0px; font-weight: 700;"><strong>Quantity</strong></th>
+          </tr>
+          {{#order}}
+          <tr>
+            <td style="font-size: 11px; text-align: left; padding-bottom: 7px;">{{name}}</td>
+            <td style="font-size: 11px; text-align: right; padding-bottom: 7px;">{{quantity}}</td>
+          </tr>
+          {{/order}}
+        </table>
+
+      </div>
+      <div style="margin-top:30px">
+        <p class="footer-text">Thank you for shopping with us!</p>
+        <p class="footer-text"  style="margin-top:30px">Freshcut paper</p>
+        <p class="footer-text">23 Bradford Street, Concord MA 01742, United States</p>
+        <p class="footer-text">hello@freshcutpaper.com</p>
+        <p class="footer-text">www.freshcutpaper.com</p>
+      </div>
+     </div>
+  </body>
+</html>
+{{/data}}
