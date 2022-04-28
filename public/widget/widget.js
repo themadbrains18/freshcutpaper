@@ -1,10 +1,10 @@
 (function () {
-  const hostName = 'http://137.184.60.54/';
+  const hostName = 'https://freshcutpapertmb.vercel.app/';
   const app = {
     GiftCardWidget: null,
 
     // Host: "https://greeting-cards-freshcut.onthemap.com",
-    Host: "http://137.184.60.54/",
+    Host: "https://freshcutpapertmb.vercel.app/",
 
     Routes: {
       Settings: "/api/widget",
@@ -28,8 +28,8 @@
       //   "https://otm-cdn-private.s3.amazonaws.com/gift-card-generator.min.css",
       // Script:
       //   "https://otm-cdn-private.s3.amazonaws.com/giftcard-generator.min.js",
-      Style: "http://137.184.60.54//public/gift-card-generator.min.css",
-      Script: "http://137.184.60.54//public/giftcard-generator.min.js",
+      Style: "https://freshcutpapertmb.vercel.app//public/gift-card-generator.min.css",
+      Script: "https://freshcutpapertmb.vercel.app//public/giftcard-generator.min.js",
     },
 
     Name: "GiftCardWidget",
