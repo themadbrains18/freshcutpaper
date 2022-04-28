@@ -5,14 +5,9 @@
   "scripts": {
     "test": "jest",
     "dev": "cross-env NODE_ENV=development nodemon ./server/index.js --watch ./server/index.js",
-<<<<<<< HEAD
     "build": "next build",
-    "start": "cross-env NODE_ENV=production node ./server/index.js"
-=======
-    "build": "next build && next export",
     "start": "cross-env NODE_ENV=production node ./server/index.js",
     "debug": "NODE_OPTIONS='--inspect' next dev"
->>>>>>> 8c28a4aeff201cd1872ad2b4f33dc5043b7f5234
   },
   "repository": {
     "type": "git",
