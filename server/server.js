@@ -269,10 +269,10 @@ app.prepare().then(async () => {
 
     h2Server.on("error", (err) => console.error(err));
 
-    h2Server.listen(serverPort, "0.0.0.0", () => {
+    h2Server.listen(serverPort, "18.234.172.252", () => {
       console.log(
         chalk.green(
-          `[✅] Ready on https://0.0.0.0:${serverPort}/ using HTTP/2 server`
+          `[✅] Ready on https://18.234.172.252:${serverPort}/ using HTTP/2 server`
         )
       );
     });
