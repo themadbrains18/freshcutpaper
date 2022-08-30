@@ -1,0 +1,99 @@
+.#{$prefix} {
+  &-popup-delivery-form{
+    max-width: 760px;
+    @media screen and (max-height: 900px) {
+      margin-bottom: 20px;
+    }
+  }
+  &-popup-input-group{
+    margin-bottom: 15px;
+    select{
+      width: 100%;
+      padding: 8px 15px;
+      border-radius: 6px;
+    }
+  }
+  &-popup-button-group{
+    margin-top:20px;
+    align-items: flex-start;
+    align-content: baseline;
+  }
+  &-popup-input-row{
+  }
+  &-popup-form-input{
+    width: 100%;
+    border-radius: 6px;
+    padding: 8px 15px;
+    &.invalid{
+      border: solid 1px red;
+      border-color: red !important;
+    }
+  }
+  &-popup-form-label{
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  &-popup-form-input-radio:checked,
+  &-popup-form-input-radio:not(:checked) {
+      position: absolute;
+      left: -9999px;
+  }
+  &-popup-form-input-radio:checked + label,
+  &-popup-form-input-radio:not(:checked) + label
+  {
+      position: relative;
+      padding-left: 28px;
+      cursor: pointer;
+      line-height: 17px;
+      display: inline-block;
+      color: $black;
+      text-transform: initial;
+  }
+  &-popup-form-input-radio + label:before,
+  &-popup-form-input-radio + label:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 16px;
+      height: 16px;
+      border: 1px solid #b34340;
+      border-radius: 100%;
+      background: #fff;
+  }
+  &-popup-form-input-radio:checked + label:after,
+  &-popup-form-input-radio:not(:checked) + label:after {
+      content: '';
+      width: 10px;
+      height: 10px;
+      background: #b34340;
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      border-radius: 100%;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+  }
+  &-popup-form-input-radio:not(:checked) + label:after {
+      opacity: 0;
+      -webkit-transform: scale(0);
+      transform: scale(0);
+  }
+  &-popup-form-input-radio:checked + label:after {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+  }
+}
+
+.accept-checkbox{
+  max-width: 188px;
+  text-align: left;
+  font-size: 14px;
+  text-transform: none;
+  @media screen and (max-height: 900px) {
+    max-width: 100%;
+    padding-right: 10px;
+  }
+}

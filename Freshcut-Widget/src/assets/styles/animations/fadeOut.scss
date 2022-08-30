@@ -1,0 +1,41 @@
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+@keyframes fadeOutDown {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.#{$prefix} {
+  &-fadeOutUp {
+    animation-name: fadeOutUp;
+  }
+  &-fadeOutDown {
+    animation-name: fadeOutDown;
+  }
+  &-fadeOut {
+    animation-name: fadeOut;
+  }
+}

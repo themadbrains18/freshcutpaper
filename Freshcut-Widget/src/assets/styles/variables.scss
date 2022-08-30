@@ -1,0 +1,63 @@
+// Core
+$prefix: 'gcw';
+
+// Typography
+$default-font-family: 'Lato', sans-serif;
+$default-font-size: 12px;
+$default-subtitle-size: 14px;
+$default-large-size: 19px;
+
+$default-font-weight: 500;
+$medium-font-weight: 500;
+$bold-font-weight: 600;
+$heavy-font-weight: 800;
+
+// Colors
+$default-background: #3EC1CF;
+$default-secondary-color: #FF4264;
+$default-color: #fff;
+$white: #fff;
+$black: #1a1a1a;
+$grey: #DADADA;
+$blue: #492AE7;
+
+// Widget
+$default-offset: 20px;
+$default-title-font-size: 28px;
+$default-subtitle-font-size: 14px;
+$default-max-width: 420px;
+$default-box-shadow: 0 5px 15px 0 rgba(37,44,97,.15), 0 2px 4px 0 rgba(93,100,148,.2);
+$default-close-btn-size: 25px;
+$default-border-radius: 5px;
+
+// Form
+$default-submit-font-size: 32px;
+$default-input-font-size: 14px;
+$default-input-color: #495057;
+$default-input-background: #FF4264;
+$default-input-border: 1px solid #fff;
+$default-input-border-radius: .25rem;
+$default-input-padding: 5px;
+$default-form-error-font-size: 12px;
+$default-form-error-color: #ff6060;
+$default-form-footer-font-size: 11px;
+$default-form-footer-line-height: 18px;
+$default-close-button-background: #fff;
+
+// Backdrop
+$default-backdrop-background: rgba(0,0,0,0.8);
+
+// Notification
+$default-notification-color: #fff;
+$default-notification-background: #2f3450;
+$default-notification-title-font-size: 16px;
+$default-notification-message-font-size: 12px;
+$default-notification-border-radius: 5px;
+
+// Buttons
+$default-button-font-size: 28px;
+$default-button-color: #28304e;
+
+// Int Tel Input
+// *Currently using CDN, we might use different approach
+$flagsImagePath: 'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.4/img/';

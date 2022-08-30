@@ -1,0 +1,54 @@
+.#{$prefix} {
+  &-top-bar {
+    & {
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 10px;
+      bottom: auto;
+      width: 100%;
+      z-index: 10000;
+      line-height: 24px;
+      font-family: $default-font-family;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      -webkit-font-smoothing: antialiased;
+    }
+    &-title {
+      font-size: 16px;
+      text-align: center;
+    }
+    &-close {
+      position: absolute;
+      right: 15px;
+      top: 10px;
+      width: 15px;
+      height: 20px;
+      opacity: 1;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.8;
+      }
+
+      &::before, &::after {
+        position: absolute;
+        left: 15px;
+        content: ' ';
+        height: 12px;
+        width: 2px;
+        background-color: rgb(255,255,255);
+      }
+
+      &::before {
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}

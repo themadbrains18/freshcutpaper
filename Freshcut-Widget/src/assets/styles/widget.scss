@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+@import 'variables';
+
+// Vendros
+@import './vendors/swiper.scss';
+@import './vendors/custom-select.scss';
+@import '~js-datepicker/src/datepicker';
+
+// Animations
+@import './animations.scss';
+@import './animations/fadeIn.scss';
+@import './animations/fadeOut.scss';
+
+// Elements
+@import './elements/delivery-form.scss';
+@import './elements/popup.scss';
+@import './elements/final-preview.scss';
+@import './elements/smartPopup.scss';
+@import './elements/toggle-button';
+@import './elements/backdrop';
+@import './elements/preloader';
+@import './elements/notification';
+@import './elements/topBar';
+@import './elements/inspPopup';
+
+// Intl Tel input
+@import './intl-tel-input/intlTelInput.scss';
+
+@import './typography.scss';
+@import './buttons.scss';
+
+.#{$prefix} {
+  &-d-block {
+    display: block !important;
+  }
+  &-d-none {
+    display: none !important;
+  }
+  &-d-flex {
+    display: flex;
+  }
+  &-justify-between {
+    justify-content: space-between;
+  }
+  &-justify-center {
+    justify-content: center;
+  }
+  &-justify-end {
+    justify-content: flex-end;
+  }
+  &-container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  &-row{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    @media screen and (max-width: 900px) {
+      display: block;
+    }
+  }
+  &-col-3, &-col-4, &-col-6, &-col-8{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  &-col-3{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+    @media screen and (max-width: 900px) {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  &-col-4{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    @media screen and (max-height: 900px) {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  &-col-6{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    @media screen and (max-width: 900px) {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  &-col-8{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+    @media screen and (max-width: 900px) {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}

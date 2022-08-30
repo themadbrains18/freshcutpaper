@@ -1,0 +1,35 @@
+.#{$prefix} {
+  &-notification {
+    display: flex;
+    margin: auto;
+    position: fixed;
+    max-width: $default-max-width;
+    background-color: $default-notification-background;
+    font-size: $default-font-size;
+    font-weight: $default-font-weight;
+    color: $default-notification-color;
+    font-family: $default-font-family;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    box-shadow: $default-box-shadow;
+    z-index: 1271;
+    border-radius: $default-notification-border-radius;
+    cursor: pointer;
+  }
+
+  &-notification-body {
+    padding: 10px 15px;
+  }
+
+  &-notification-title {
+    font-size: $default-notification-title-font-size;
+    margin-bottom: 5px;
+  }
+
+  &-notification-message {
+    font-size: $default-notification-message-font-size;
+  }
+}

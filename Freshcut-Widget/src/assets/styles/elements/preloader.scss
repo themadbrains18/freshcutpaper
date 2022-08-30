@@ -1,0 +1,54 @@
+.#{$prefix} {
+  &-preloader {
+    height: 2px;
+    margin: 5px;
+    display: flex;
+    transform: translateZ(0);
+    width: 100%;
+  }
+  &-preloader div {
+    flex: 1;
+    background: salmon;
+    animation: go 0.8s infinite alternate ease;
+    box-shadow: 0 0 20px salmon;
+  }
+  &-preloader div:nth-child(1) {
+    animation-delay: -0.72s;
+  }
+  &-preloader div:nth-child(2) {
+    animation-delay: -0.64s;
+  }
+  &-preloader div:nth-child(3) {
+    animation-delay: -0.56s;
+  }
+  &-preloader div:nth-child(4) {
+    animation-delay: -0.48s;
+  }
+  &-preloader div:nth-child(5) {
+    animation-delay: -0.4s;
+  }
+  &-preloader div:nth-child(6) {
+    animation-delay: -0.32s;
+  }
+  &-preloader div:nth-child(7) {
+    animation-delay: -0.24s;
+  }
+  &-preloader div:nth-child(8) {
+    animation-delay: -0.16s;
+  }
+  &-preloader div:nth-child(9) {
+    animation-delay: -0.08s;
+  }
+  &-preloader div:nth-child(10) {
+    animation-delay: 0s;
+  }
+  
+  @keyframes go {
+    100% {
+      background: transparent;
+      flex: 10;
+      box-shadow: 0 0 0 transparent;
+    }
+  }
+  
+}

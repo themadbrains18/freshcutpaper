@@ -1,0 +1,93 @@
+.#{$prefix} {
+  &-giftcard_generator {
+    &-final-preview{
+      @media screen and (max-width: 900px) {
+        margin-bottom: 20px;
+      }
+    }
+    &-final-preview-container{
+      margin-top: 30px;
+      margin-bottom: 30px;
+      margin-right: 20px;
+      margin-left: 20px;
+      display: flex;
+      min-width: 700px;
+      justify-content: center;
+      @media screen and (max-width: 900px) {
+        display: block;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-right: 0px;
+        margin-left: 0px;
+        min-width: 100%;
+      }
+      &::after{
+        content: "";
+        clear: both;
+        display: table;
+      }
+    }
+    &-final-preview{
+      &-title{
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 0px;
+      }
+      &-front-wrapper{
+        @media screen and (max-width: 400px) {
+          width: 365px;
+        }
+        overflow: hidden;
+        width: 420px;
+        height: 425px;
+        position: relative;
+        display: flex;
+        margin: auto;
+        border: 2px solid #000;
+        align-items: center;
+        justify-content: center;
+      }
+      &-card-front{
+        @media screen and (max-width: 900px) {
+          margin: auto;
+        }
+        img{
+          // width: 100%;
+          // top: 50%;
+          // position: relative;
+          // transform: translateY(-50%);
+        }
+      }
+      &-card-text{
+        margin-left: 10px;
+        white-space: pre-wrap;
+        @media screen and (max-width: 900px) {
+          margin: auto;
+          margin-top: 15px;
+        }
+        &-content{
+          padding: 15px;
+          width: 420px;
+          height: 425px;
+          position: relative;
+          display: block;
+          margin: auto;
+          border: 2px solid #000;
+          color: #797979;
+          line-height: 25px;
+          pointer-events: none;
+          resize: none;
+        }
+      }
+    }
+  }
+}
+
+.agree-container{
+  justify-content: flex-end !important;
+}
+
+.gcw-front-image{
+  height: 100%;
+}
