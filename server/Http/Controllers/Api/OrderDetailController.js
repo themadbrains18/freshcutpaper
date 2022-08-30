@@ -30,7 +30,7 @@ class OderDetailController extends RouteController {
         headers: myHeaders,
         redirect: 'follow'
       };
-      var shopifyRequestUrl = "https://fresh-cust-paper.myshopify.com/admin/api/2022-04/orders/"+newid+".json";
+      var shopifyRequestUrl = "https://XXXXXXXXXXXXXXXXX.myshopify.com/admin/XXXXX/2022-04/orders/"+newid+".json";
       // console.log(shopifyRequestUrl);
       var dataa = await fetch(shopifyRequestUrl, requestOptions)
         .then(response => 
