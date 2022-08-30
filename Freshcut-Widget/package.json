@@ -2,7 +2,7 @@
   "name": "gift-card-generator",
   "version": "0.0.1",
   "description": "Giftcard generator",
-  "browser": "../public/giftcard-generator.min.js",
+  "browser": "../public/XXXXXX.min.js",
   "scripts": {
     "build:js": "rollup -c",
     "build": "npm run build:js",
